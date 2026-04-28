@@ -6,9 +6,9 @@ import {
 } from "@/components/social-icons";
 
 const SOCIALS = [
-  { href: "https://github.com/DeAusten", label: "GitHub", Icon: GitHubIcon },
+  { href: "https://github.com/austendewolf", label: "GitHub", Icon: GitHubIcon },
   {
-    href: "https://www.linkedin.com/in/deausten",
+    href: "https://www.linkedin.com/in/austendewolf/",
     label: "LinkedIn",
     Icon: LinkedInIcon,
   },
