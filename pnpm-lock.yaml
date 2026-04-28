@@ -10,6 +10,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@awd/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@base-ui/react':
         specifier: ^1.4.1
         version: 1.4.1(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -92,9 +95,6 @@ importers:
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
-      drizzle-kit:
-        specifier: ^0.31.10
-        version: 0.31.10
       eslint:
         specifier: ^9
         version: 9.39.4(jiti@2.6.1)
@@ -107,6 +107,25 @@ importers:
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
+      typescript:
+        specifier: ^5
+        version: 5.9.3
+
+  packages/db:
+    dependencies:
+      drizzle-orm:
+        specifier: ^0.45.2
+        version: 0.45.2(postgres@3.4.9)
+      postgres:
+        specifier: ^3.4.9
+        version: 3.4.9
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.19.39
+      drizzle-kit:
+        specifier: ^0.31.10
+        version: 0.31.10
       typescript:
         specifier: ^5
         version: 5.9.3

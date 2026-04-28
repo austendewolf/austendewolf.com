@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { db } from "@/db";
-import { messages } from "@/db/schema";
+import { db, messages } from "@awd/db";
 
 export const runtime = "nodejs";
 
