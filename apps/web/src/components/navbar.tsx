@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ContactDialog } from "@/components/contact-dialog";
 
 const NAV_ITEMS: { href: string; label: string }[] = [
   { href: "/projects", label: "Projects" },
@@ -19,21 +18,18 @@ export function Navbar() {
           <span className="text-accent">.</span>
           com
         </Link>
-        <div className="flex items-center gap-6">
-          <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="hover:text-accent transition-colors"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ContactDialog />
-        </div>
+        <ul className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
+          {NAV_ITEMS.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className="hover:text-accent transition-colors"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

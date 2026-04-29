@@ -29,7 +29,7 @@ export default async function HomePage() {
         <section className="mt-20">
           <div className="mb-6 flex items-baseline justify-between">
             <h3 className="font-mono text-sm uppercase tracking-widest text-muted-foreground">
-              Currently working on
+              Projects
             </h3>
             <Link
               href="/projects"
