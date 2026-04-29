@@ -11,7 +11,10 @@ export default async function HomePage() {
       <section className="space-y-6">
         <p className="font-mono text-sm text-accent">Hello, I&apos;m</p>
         <h1 className="text-6xl sm:text-7xl font-bold tracking-tight text-foreground">
-          Austen. <span aria-hidden>👋🏾</span>
+          Austen{" "}
+          <span aria-hidden className="text-3xl sm:text-4xl align-middle">
+            👋🏾
+          </span>
         </h1>
         <h2 className="text-2xl sm:text-3xl text-muted-foreground">
           I build <RotatingWords />
