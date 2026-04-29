@@ -2,7 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-const WORDS = ["founder.", "creator.", "designer.", "builder."];
+const WORDS = [
+  "software (mostly).",
+  "companies (occasionally).",
+  "teams (currently).",
+  "trucks (one).",
+  "furniture (lately).",
+  "food (apparently).",
+];
 const INTERVAL = 2400;
 
 export function RotatingWords() {

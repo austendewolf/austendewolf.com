@@ -11,14 +11,14 @@ export default async function HomePage() {
       <section className="space-y-6">
         <p className="font-mono text-sm text-accent">Hello, I&apos;m</p>
         <h1 className="text-6xl sm:text-7xl font-bold tracking-tight text-foreground">
-          Austen.
+          Austen. <span aria-hidden>👋🏾</span>
         </h1>
         <h2 className="text-2xl sm:text-3xl text-muted-foreground">
-          I am a <RotatingWords />
+          I build <RotatingWords />
         </h2>
         <p className="max-w-xl text-base text-muted-foreground leading-relaxed">
-          I design and build digital products, brands, and the occasional
-          company. I can teach you to do the same.
+          They&apos;re all products in the end. I like making them, and I like
+          working with the people who make them.
         </p>
       </section>
 
